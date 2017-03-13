@@ -1,30 +1,31 @@
 package javastudent;
 
 public class CustomerInvoice {
-	 String name;
-	 String item ;
-	 double price ;
-	 String address;
+	private String name;
+	private String item ;
+	private double price ;
+	private String address;
+	 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
 	public String getItem() {
-		return item;
+		return this.item;
 	}
 	public void setItem(String item) {
 		this.item = item;
 	}
 	public double getPrice() {
-		return price;
+		return this.price;
 	}
 	public void setPrice(double price) {
 		this.price = price;
 	}
 	public String getAddress() {
-		return address;
+		return this.address;
 	}
 	public void setAddress(String address) {
 		this.address = address;
