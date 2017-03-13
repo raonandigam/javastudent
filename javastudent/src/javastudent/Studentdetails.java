@@ -1,18 +1,13 @@
 package javastudent;
 
 public class Studentdetails {
-        static int id;
-        static int phoneno;
-        static String firstname;
-        static String lastname;
+         int id = 01;
+         int phoneno = 510666777;
+         String firstname = "chaitanya";
+         String lastname = "kanchi";
         
-        public static void main(String[] args)
-        {
-        	Studentdetails s1 = new Studentdetails();
-        	s1.id = 01;
-        	s1.phoneno = 510666777;
-        	s1.firstname = "chaitanya";
-        	s1.lastname = "kanchi";
+     void disply(){
+      
         	System.out.println("id is :" +id);
         	System.out.println("phone no is :" +phoneno);
         	System.out.println("firstname is :" +firstname);
