@@ -15,25 +15,25 @@ public class Address {
 		this.city = city;
 	} 
 	public String getStreet() {
-		return street;
+		return this.street;
 	}
 	public void setStreet(String street) {
 		this.street = street;
 	}
 	public int getHouseno() {
-		return houseno;
+		return this.houseno;
 	}
 	public void setHouseno(int houseno) {
 		this.houseno = houseno;
 	}
 	public int getZipcode() {
-		return zipcode;
+		return this.zipcode;
 	}
 	public void setZipcode(int zipcode) {
 		this.zipcode = zipcode;
 	}
 	public String getCity() {
-		return city;
+		return this.city;
 	}
 	public void setCity(String city) {
 		this.city = city;

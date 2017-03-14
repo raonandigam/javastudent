@@ -4,39 +4,36 @@ public class CustomerInvoice   {
 	private String name;
 	private String item ;
 	private double price ;
-	Address adrs = new Address();
-
+	Address adrs;
 	
-	public CustomerInvoice(String name, String item, double price,Address adrs1) {
+    public CustomerInvoice(String name, String item, double price, Address adrs) {
+		super();
 		this.name = name;
 		this.item = item;
 		this.price = price;
-		adrs.setCity(adrs1.getCity());
-		adrs.setStreet(adrs1.getStreet());
-		adrs.setHouseno(adrs1.getHouseno());
-		adrs.setZipcode(adrs1.getZipcode());
+		this.adrs = adrs;
 	}
 	public String getName() {
-		return name;
+		return this.name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
 	public String getItem() {
-		return item;
+		return this.item;
 	}
 	public void setItem(String item) {
 		this.item = item;
 	}
 	public double getPrice() {
-		return price;
+		return this.price;
 	}
 	public void setPrice(double price)
 	{
 		this.price = price;
 	}
 	public Address getAdrs(){
-		return adrs;
+		return this.adrs;
 	}
 	public void setAdrs(Address adrs1){
 		adrs.setAddress(adrs1.getCity(),adrs1.getStreet(),adrs1.getHouseno(),adrs.getZipcode());}
