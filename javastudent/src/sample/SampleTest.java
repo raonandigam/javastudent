@@ -3,7 +3,8 @@ package sample;
 public class SampleTest {
 	public static void main(String[] args){
 		
-		CustomerInvoice sale = new CustomerInvoice("chaitanya","iphone",800.00,"high street",802,94538,"fremont");
+	
+	/*	CustomerInvoice sale = new CustomerInvoice(address"chaitanya","iphone",800.00,"high street",802,94538,"fremont","address");
 		CustomerInvoice firstsale = new CustomerInvoice("vasu", "samsungphone", 500.00,"high street",802,94538,"fremont");
 		CustomerInvoice secondsale = new CustomerInvoice("krishna","nokia",800.00,"high street",802,94538,"fremont");
 	       
@@ -32,7 +33,15 @@ public class SampleTest {
 			System.out.println("street is:" +secondsale.getStreet());
 			System.out.println("house no is:" +secondsale.getHouseno());
 			System.out.println("zipcode is:" +secondsale.getZipcode());
-			System.out.println("city is:" +secondsale.getCity());
+			System.out.println("city is:" +secondsale.getCity());*/
 			
+		
+		
+		
+			 Address addr = new Address("highstreet",94538,802,"fremont");
+			 CustomerInvoice c = new CustomerInvoice("chaitanya","iphone",800,addr);
+			 System.out.println("name:" + c.getName() +"\n"+ "item:" + c.getItem() + "\n"+ "price:" + c.getPrice() +"\n"+ "street :" + c.getAdrs().getStreet() +"\n"+ "Houseno :"+c.getAdrs().getHouseno() +"\n"+"Zipcode:"+c.getAdrs().getZipcode()+"\n"+"city:"+c.getAdrs().getCity() + "");
+			 
+		
 			}
 	}
