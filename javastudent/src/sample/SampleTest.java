@@ -41,10 +41,10 @@ public class SampleTest {
 		 */
 
 		Address addr = new Address("highstreet", 94538, 802, "fremont");
-		CustomerInvoice c = new CustomerInvoice("chaitanya", "iphone", 800, addr);
+		CustomerInvoice c = new CustomerInvoice("chaitanya", "iphone", 800, "highstreet", 94538, 802, "fremont");
 		System.out.println("name:" + c.getName() + "\n" + "item:" + c.getItem() + "\n" + "price:" + c.getPrice() + "\n"
-				+ "street :" + c.getAdrs().getStreet() + "\n" + "Houseno :" + c.getAdrs().getHouseno() + "\n"
-				+ "Zipcode:" + c.getAdrs().getZipcode() + "\n" + "city:" + c.getAdrs().getCity() + "");
+				+ "street :" +addr.getStreet() + "\n" + "Houseno :" +addr .getHouseno() + "\n"
+				+ "Zipcode:" + addr.getZipcode() + "\n" + "city:" + addr.getCity() + "");
 
 	}
 }

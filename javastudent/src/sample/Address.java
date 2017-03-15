@@ -14,6 +14,7 @@ public class Address {
 		this.zipcode = zipcode;
 		this.city = city;
 	} 
+   
 	public String getStreet() {
 		return this.street;
 	}
