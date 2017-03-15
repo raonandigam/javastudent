@@ -4,54 +4,44 @@ public class CustomerInvoice   {
 	private String name;
 	private String item ;
 	private double price ;
-	private String strt;
-	private int Hno;
-	private int Zpcode;
-	private String cty;
+	private Address addr;
   
 		
 	public CustomerInvoice(String name, String item, double price, String strt, int hno, int zpcode, String cty) {
-		super();
 		this.name = name;
 		this.item = item;
 		this.price = price;
-		Address addr = new Address();
-		strt = addr.getStreet();
-		Hno = addr.getHouseno();
-		Zpcode = addr.getZipcode();
-		cty = addr.getCity();
+		this.addr = new Address(strt,hno,zpcode,cty);
+		
 	}
-		
-		
-		 
-
-	//	addr.setStreet(addr.getCity());
 		
 
 
 	public String getStrt() {
-		return strt;
+		return this.addr.getStreet();
 	}
 	public void setStrt(String strt) {
-		this.strt = strt;
+		this.addr.setStreet(strt);
 	}
 	public int getHno() {
-		return Hno;
+		return this.addr.getHouseno();
 	}
 	public void setHno(int hno) {
-		Hno = hno;
+		this.addr.setHouseno(hno);
 	}
 	public int getZpcode() {
-		return Zpcode;
+		return this.addr.getZipcode();
+
 	}
+
 	public void setZpcode(int zpcode) {
-		Zpcode = zpcode;
+		this.addr.setZipcode(zpcode);
 	}
 	public String getCty() {
-		return cty;
+		return this.addr.getCity();
 	}
 	public void setCty(String cty) {
-		this.cty = cty;
+		this.addr.setCity(cty);
 	}
 	public String getName() {
 		return this.name;

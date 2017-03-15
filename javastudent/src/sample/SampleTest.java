@@ -40,11 +40,11 @@ public class SampleTest {
 		 * +secondsale.getCity());
 		 */
 
-		Address addr = new Address("highstreet", 94538, 802, "fremont");
+
 		CustomerInvoice c = new CustomerInvoice("chaitanya", "iphone", 800, "highstreet", 94538, 802, "fremont");
 		System.out.println("name:" + c.getName() + "\n" + "item:" + c.getItem() + "\n" + "price:" + c.getPrice() + "\n"
-				+ "street :" +addr.getStreet() + "\n" + "Houseno :" +addr .getHouseno() + "\n"
-				+ "Zipcode:" + addr.getZipcode() + "\n" + "city:" + addr.getCity() + "");
+				+ "street :" +c.getStrt() + "\n" + "Houseno :" +c.getHno() + "\n"
+				+ "Zipcode:" + c.getZpcode() + "\n" + "city:" + c.getCty() + "");
 
 	}
 }
